@@ -1,34 +1,32 @@
 {
   "expo": {
     "name": "Elite Cambios",
-    "slug": "elite-cambios",
+    "slug": "Elitecambiocalculadora",
     "version": "1.0.0",
     "orientation": "portrait",
-    "userInterfaceStyle": "dark",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#050505"
+      "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": false,
-      "bundleIdentifier": "com.hectorvic.elitecambios"
+      "supportsTablet": true
     },
     "android": {
-      "package": "com.hectorvic.elitecambios",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#050505"
+        "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.elitecambios.calculadora"
     },
     "extra": {
       "eas": {
-        "projectId": "PEGA_AQUI_TU_PROJECT_ID"
+        "projectId": "a37e968d-8a6a-4968-a6d1-d07945658e33"
       }
     }
   }
