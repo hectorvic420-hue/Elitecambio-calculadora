@@ -24,8 +24,10 @@
       },
       "package": "com.elitecambios.calculadora"
     },
-   "extra": {
+    "extra": {
       "eas": {
         "projectId": "82054851-1c32-4e7f-aae8-0d67720e975a"
       }
     }
+  }
+}
