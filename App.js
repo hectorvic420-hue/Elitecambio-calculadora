@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'; 
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, StatusBar, Linking, ActivityIndicator, KeyboardAvoidingView, Platform, Modal, Alert, Pressable } from 'react-native'; 
-import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; 
+import React, { useState, useEffect } from 'react';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, StatusBar, Linking, ActivityIndicator, KeyboardAvoidingView, Platform, Modal, Alert, Pressable } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage'; 
 
 const COLORES = { bg: '#050505', surface: '#111111', border: '#222222', accent: '#E5E5E5', bcv: '#4fc3f7', textSec: '#A0A0A0', textMut: '#444444' }; 
@@ -102,9 +102,9 @@ export default function AppElite() {
       <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : null} style={{flex:1}}> 
         <ScrollView contentContainerStyle={{padding: 20, paddingBottom: 120}}> 
           
-          <Pressable onLongPress={() => setModalPin(true)} delayLongPress={3000} style={s.header}> 
-            <FontAwesome5 name="gem" size={30} color={COLORES.accent} /> 
-            <Text style={s.titulo}>ELITE CAMBIOS</Text> 
+          <Pressable onLongPress={() => setModalPin(true)} delayLongPress={3000} style={s.header}>
+            <Ionicons name="diamond-outline" size={54} color={COLORES.accent} />
+            <Text style={s.titulo}>ELITE CAMBIOS</Text>
           </Pressable> 
 
           <View style={s.bcvCard}> 
@@ -193,7 +193,7 @@ export default function AppElite() {
 const s = StyleSheet.create({ 
   container: { flex: 1, backgroundColor: COLORES.bg }, 
   header: { alignItems: 'center', marginVertical: 20 }, 
-  titulo: { color: COLORES.accent, fontSize: 16, fontWeight: '900', letterSpacing: 5, marginTop: 8 }, 
+  titulo: { color: COLORES.accent, fontSize: 15, fontWeight: '900', letterSpacing: 8, marginTop: 10 },
   bcvCard: { backgroundColor: '#0A0A0A', padding: 15, borderRadius: 15, borderWidth: 1, borderColor: '#1A1A1A', marginBottom: 20 }, 
   bcvLabel: { color: COLORES.bcv, fontSize: 10, fontWeight: '800', letterSpacing: 2 }, 
   bcvText: { color: '#fff', fontSize: 24, fontWeight: '900', marginTop: 5 }, 
